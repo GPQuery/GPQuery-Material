@@ -1,0 +1,23 @@
+
+<table class="table races"
+       ng-controller="RacesController as vm">
+  <thead>
+    <tr>
+      <th ng-repeat="header in vm.tableHeaders">
+        {{header}}
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat="row in vm.resultsRows">
+      <td>{{ row.round }}</td>
+      <td>{{ row.raceName }}</td>
+      <td>{{ row.Circuit.circuitName }}</td>
+      <td>{{ row.Circuit.Location.locality }}, {{ row.Circuit.Location.country }}</td>
+      <td>{{ row.date }}</td>
+      <td>{{ row.time }}</td>
+    </tr>
+  </tbody>
+
+</table>

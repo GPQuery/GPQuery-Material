@@ -1,0 +1,141 @@
+# ===============================
+# Joho's Gitignore
+# ===============================
+# Version   v0.6.1
+# Created   17-Oct-2014
+# Updated   22-Dec-2015
+# Docs      http://git-scm.com/docs/gitignore
+# ===============================
+
+
+
+
+# -------------------------------
+# Project-Specific
+# -------------------------------
+
+.env
+.awspublish-*
+*.csv
+
+# -------------------------------
+
+
+
+
+# -------------------------------
+# Bower & npm
+# -------------------------------
+
+bower_components
+node_modules
+npm-debug*
+
+# -------------------------------
+
+
+
+
+# -------------------------------
+# Build & Test
+# -------------------------------
+
+.tmp/
+build/
+coverage/
+dist/
+*.css.map
+.yo-rc.json
+.sass-cache
+
+# -------------------------------
+
+
+
+
+# -------------------------------
+# Runtime
+# -------------------------------
+
+coverage/
+journal/
+lib-cov/
+logs/
+pids/
+report/
+results/
+*.log
+*.out
+*.pid
+*.seed
+
+# -------------------------------
+
+
+
+
+# -------------------------------
+# Database & Archives & Installers
+# -------------------------------
+
+*.7z
+*.cab
+*.dmg
+*.gz
+*.iso
+*.jar
+*.mdf
+*.msi
+*.msm
+*.msp
+*.ldf
+*.rar
+*.sql
+*.sqlite
+*.tar
+*.tar.gz
+*.zip
+
+# -------------------------------
+
+
+
+
+
+# -------------------------------
+# Operating System & IDEs
+# -------------------------------
+
+*~
+*.lnk
+.DS_Store*
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+$RECYCLE.BIN/
+/.idea
+app/jspm_packages
+ehthumbs.db
+packages
+Desktop.ini
+Icon?
+Thumbs.db
+
+# -------------------------------
+
+
+
+
+# -------------------------------
+# Temporary & Miscellaneous
+# -------------------------------
+
+!.gitkeep
+temp
+tmp
+*.tmp
+*.tmp.*
+
+# -------------------------------

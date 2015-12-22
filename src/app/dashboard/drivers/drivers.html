@@ -1,0 +1,21 @@
+
+<table class="table races"
+       ng-controller="DriversController as vm">
+  <thead>
+    <tr>
+      <th ng-repeat="header in vm.tableHeaders">
+        {{header}}
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat="row in vm.resultsRows">
+      <td>{{ row.familyName }}</td>
+      <td>{{ row.givenName }}</td>
+      <td>{{ row.dateOfBirth }}</td>
+      <td>{{ row.nationality }}</td>
+    </tr>
+  </tbody>
+
+</table>

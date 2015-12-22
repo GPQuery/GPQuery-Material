@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js"
+      ng-app="GPQuery"
+      ng-controller="PageController as main"
+      lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GPQuery</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css({.tmp/serve,src}) styles/app.css -->
+  <!-- inject:css -->
+  <!-- css files will be automatically insert here -->
+  <!-- endinject -->
+  <!-- endbuild -->
+
+  <!-- build:js(src) scripts/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body layout="row" ng-cloak>
+  <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+
+
+<!-- Site Sidenav
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2"
+            layout="column"
+            md-component-id="left"
+            md-is-locked-open="$mdMedia('gt-sm')">
+
+
+
+
+  <!-- Sidenav Toolbar
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <md-toolbar class="sidenav-toolbar md-tall">
+
+
+    <div class="md-toolbar-tools">
+
+      <md-button class="md-icon-button"
+                 ng-click="main.toggleSidenav()"
+                 hide-gt-sm>
+        <md-icon class="material-icons">arrow_back</md-icon>
+      </md-button>
+
+      <div flex></div>
+
+    </div>
+
+
+    <div class="md-toolbar-tools md-toolbar-tools-bottom">
+    </div>
+
+
+  </md-toolbar>
+
+  <!-- end toolbar ––––––––––––––––––––––––––––––––– -->
+
+
+
+
+  <!-- Sidenav Content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <md-content>
+
+
+    <md-list>
+      <md-list-item ng-repeat="link in main.navLinks">
+        <md-button role="link" tabIndex="0" ng-href="#{{link | lowercase}}">
+          {{ link }}
+        </md-button>
+      </md-list-item>
+    </md-list>
+
+
+  </md-content>
+
+  <!-- end content ––––––––––––––––––––––––––––––––– -->
+
+
+
+</md-sidenav>
+
+<!-- end sidenav ––––––––––––––––––––––––––––––––– -->
+
+
+
+
+  <div layout="column"
+       tabIndex="-1"
+       role="main"
+       flex>
+
+
+
+
+    <!-- Site Toolbar
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <md-toolbar class="site-toolbar">
+
+      <div class="md-toolbar-tools">
+
+        <md-button class="md-icon-button"
+                   ng-click="main.toggleSidenav()"
+                   hide-gt-sm>
+          <md-icon class="material-icons">menu</md-icon>
+        </md-button>
+
+      </div>
+    </md-toolbar>
+
+    <!-- end toolbar ––––––––––––––––––––––––––––––––– -->
+
+
+
+
+    <md-content ng-view
+                md-scroll-y
+                flex
+                layout-padding>
+    </md-content>
+
+
+
+
+
+  </div>
+
+  <!-- build:js(src) scripts/vendor.js -->
+  <!-- bower:js -->
+  <!-- run `gulp inject` to automatically populate bower script dependencies -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+  <!-- inject:js -->
+  <!-- js files will be automatically insert here -->
+  <!-- endinject -->
+
+  <!-- inject:partials -->
+  <!-- angular templates will be automatically converted in js and inserted here -->
+  <!-- endinject -->
+  <!-- endbuild -->
+
+</body>
+</html>
