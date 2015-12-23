@@ -12,6 +12,7 @@
       'ngResource',
       'ngRoute',
       'ngMaterial',
+      'nvd3',
       'toastr'
     ]);
 

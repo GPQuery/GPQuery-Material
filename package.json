@@ -1,10 +1,24 @@
 {
   "name": "GPQuery",
   "version": "0.0.0",
+  "description": "Data visualisation and statistical analysis for Grand Prix racing records since 1950",
+
   "dependencies": {},
   "scripts": {
+    "install": "bower install",
     "test": "gulp test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GPQuery/GPQuery-Material.git"
+  },
+  "authors": [
+    "Jonathan Ho"
+  ],
+  "bugs": {
+    "url": "https://github.com/GPQuery/GPQuery-Material/issues"
+  },
+  "homepage": "https://github.com/GPQuery/GPQuery-Material#readme",
   "devDependencies": {
     "estraverse": "~4.1.0",
     "gulp": "~3.9.0",
