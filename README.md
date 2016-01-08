@@ -13,26 +13,25 @@ Usage
 Clone the repository:
 
 ```sh
-$ git clone https://github.com/GPQuery/GPQuery-Material.git
+git clone https://github.com/GPQuery/GPQuery-Material.git
 ```
 
 Enter directory and install dependencies:
 
 ```sh
-$ cd GPQuery-Material
-$ npm install
-$ bower install
+npm install
+bower install
 ```
 
 Use Gulp to serve with Browser-Sync from `src/`:
 
 ```sh
-$ gulp serve
+gulp serve
 ```
 
 Or build and serve from `dist/`:
 
 ```sh
-$ gulp serve:dist
+gulp serve:dist
 ```
 

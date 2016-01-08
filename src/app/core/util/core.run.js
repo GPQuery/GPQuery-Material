@@ -6,9 +6,19 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log) {
+  function runBlock($rootScope, $route, $log) {
 
-    $log.debug('runBlock end');
+
+    //  Route Change Page Title
+    // ------------------------------
+
+    $rootScope.$on('$routeChangeSuccess', function() {
+
+      $rootScope.title = $route.current.title;
+      $log.debug('Route Change: ' + $rootScope.title);
+
+    });
+
   }
 
 })();

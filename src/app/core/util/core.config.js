@@ -7,15 +7,24 @@
 
   /** @ngInject */
   function config($logProvider, toastrConfig) {
-    // Enable log
+
+
+    // Enable Log
+    // ------------------------------
+
     $logProvider.debugEnabled(true);
 
-    // Set options third-party lib
+
+    // Set Toastr
+    // ------------------------------
+
     toastrConfig.allowHtml = true;
     toastrConfig.timeOut = 3000;
     toastrConfig.positionClass = 'toast-bottom-left';
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = true;
+
+    
   }
 
 })();
